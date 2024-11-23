@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="card shadow mb-4">                   
+    <div class="card-body"> 
+     <table class="table table-striped">
+        <tr> <th>Id</th><th>Title</th> <th>Content</th>  <th>Duration</th> <th>Created Date</th> <th>Video URL</th> </tr>
+              <tbody *ngFor="let cours of cours">
+                       <tr >
+                          <td>{{cours.id}}</td>
+                          <td>{{cours.title}}</td>
+                          <td>{{cours.content}}</td>
+                          <td>{{cours.duration}}</td>
+                          <td>{{cours.createdDate | date:'dd/MM/yyyy'}}</td>
+                          <td>{{cours.videoUrl}}</td>
+                        </tr>                                    
+               </tbody>
+    </table>
+    </div>
+  </div>
+</div>
